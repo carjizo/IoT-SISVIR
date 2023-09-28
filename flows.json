@@ -1,6 +1,6 @@
 [
     {
-        "id": "96bccfd90d6c251c",
+        "id": "c7d83dd76c9dcb21",
         "type": "tab",
         "label": "Flow 1",
         "disabled": false,
@@ -18,9 +18,472 @@
         "className": ""
     },
     {
-        "id": "c53b66e37b57d885",
+        "id": "f9abe2c684ff175b",
+        "type": "mqtt-broker",
+        "name": "SISVIR/ESP8266",
+        "broker": "mqtt://broker.emqx.io",
+        "port": "1883",
+        "clientid": "mqttx_3dce3cc0",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "5",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "15713f4af7851114",
+        "type": "ui_group",
+        "name": "Signos Vitales",
+        "tab": "0d3d6a9cd8597d10",
+        "order": 1,
+        "disp": true,
+        "width": "18",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "0d3d6a9cd8597d10",
+        "type": "ui_tab",
+        "name": "SISVIR TIEMPO REAL",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "531c3908b0ba28f6",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#0eb8c0",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "401f6ecb42ed042f",
+        "type": "ui_tab",
+        "name": "Sisvir_historico",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "b242256b3db79e23",
+        "type": "ui_group",
+        "name": "Tiempo real",
+        "tab": "401f6ecb42ed042f",
+        "order": 1,
+        "disp": true,
+        "width": "18",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "1046833424e00bcc",
+        "type": "postgreSQLConfig",
+        "name": "railway",
+        "host": "containers-us-west-21.railway.app",
+        "hostFieldType": "str",
+        "port": "6586",
+        "portFieldType": "num",
+        "database": "railway",
+        "databaseFieldType": "str",
+        "ssl": "false",
+        "sslFieldType": "bool",
+        "applicationName": "",
+        "applicationNameType": "str",
+        "max": "10",
+        "maxFieldType": "num",
+        "idle": "1000",
+        "idleFieldType": "num",
+        "connectionTimeout": "10000",
+        "connectionTimeoutFieldType": "num",
+        "user": "postgres",
+        "userFieldType": "str",
+        "password": "RcH20xidueadLH1TK3ij",
+        "passwordFieldType": "str"
+    },
+    {
+        "id": "867a0a8756568906",
+        "type": "postgresDB",
+        "name": "Signos",
+        "host": "containers-us-west-21.railway.app",
+        "hostFieldType": "str",
+        "port": "6586",
+        "portFieldType": "num",
+        "database": "railway",
+        "databaseFieldType": "str",
+        "ssl": "false",
+        "sslFieldType": "bool",
+        "max": "10",
+        "maxFieldType": "num",
+        "min": "1",
+        "minFieldType": "num",
+        "idle": "1000",
+        "idleFieldType": "num",
+        "connectionTimeout": "10000",
+        "connectionTimeoutFieldType": "num",
+        "user": "postgres",
+        "userFieldType": "str",
+        "password": "RcH20xidueadLH1TK3ij",
+        "passwordFieldType": "str"
+    },
+    {
+        "id": "20b5e0c1335a8c2f",
+        "type": "postgreSQLConfig",
+        "name": "",
+        "host": "127.0.0.1",
+        "hostFieldType": "str",
+        "port": "5432",
+        "portFieldType": "num",
+        "database": "Signos_vitales",
+        "databaseFieldType": "str",
+        "ssl": "false",
+        "sslFieldType": "bool",
+        "applicationName": "",
+        "applicationNameType": "str",
+        "max": "10",
+        "maxFieldType": "num",
+        "idle": "1000",
+        "idleFieldType": "num",
+        "connectionTimeout": "10000",
+        "connectionTimeoutFieldType": "num",
+        "user": "postgres",
+        "userFieldType": "str",
+        "password": "2023",
+        "passwordFieldType": "str"
+    },
+    {
+        "id": "cbc79b0b8bae42d5",
+        "type": "mqtt in",
+        "z": "c7d83dd76c9dcb21",
+        "name": "Sensores_2023",
+        "topic": "Sisvir/sensores",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "f9abe2c684ff175b",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 140,
+        "y": 380,
+        "wires": [
+            [
+                "06aad6fc9f41ba21",
+                "51b847d1ac39cadf",
+                "537e4fbf0ef23a18",
+                "bc09de75de2f092d",
+                "fde0270ca9586c55"
+            ]
+        ]
+    },
+    {
+        "id": "bf177d7ab6c35e79",
+        "type": "debug",
+        "z": "c7d83dd76c9dcb21",
+        "name": "Data mqtt",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 640,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "06aad6fc9f41ba21",
+        "type": "function",
+        "z": "c7d83dd76c9dcb21",
+        "name": "Extraer Datos",
+        "func": "var id = msg.payload.id;\nvar temperatura = msg.payload.temperatura;\nvar pulso = msg.payload.pulso;\nmsg.params = [temperatura, pulso]\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 400,
+        "wires": [
+            [
+                "bf177d7ab6c35e79",
+                "76c5bfaaf8169f42",
+                "a7c047c5a83e21da"
+            ]
+        ]
+    },
+    {
+        "id": "ba563850431a80f2",
+        "type": "ui_gauge",
+        "z": "c7d83dd76c9dcb21",
+        "name": "Temperatura Corporal",
+        "group": "15713f4af7851114",
+        "order": 0,
+        "width": "6",
+        "height": "4",
+        "gtype": "gage",
+        "title": "Temperatura Corporal",
+        "label": "°C",
+        "format": "{{value}}",
+        "min": "36",
+        "max": "40",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 820,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "76c5bfaaf8169f42",
+        "type": "function",
+        "z": "c7d83dd76c9dcb21",
+        "name": "Obtener Temperatura",
+        "func": "msg.payload = msg.payload.temperatura\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 660,
+        "y": 380,
+        "wires": [
+            [
+                "ba563850431a80f2"
+            ]
+        ]
+    },
+    {
+        "id": "e2834ca11e171d3b",
+        "type": "ui_gauge",
+        "z": "c7d83dd76c9dcb21",
+        "name": "Pulso cardiaco",
+        "group": "15713f4af7851114",
+        "order": 0,
+        "width": "6",
+        "height": "4",
+        "gtype": "gage",
+        "title": "Pulso_cardiaco",
+        "label": "lpm",
+        "format": "{{value}}",
+        "min": "70",
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 840,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "a7c047c5a83e21da",
+        "type": "function",
+        "z": "c7d83dd76c9dcb21",
+        "name": "Obtener Pulso",
+        "func": "msg.payload = msg.payload.pulso\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 640,
+        "y": 480,
+        "wires": [
+            [
+                "e2834ca11e171d3b"
+            ]
+        ]
+    },
+    {
+        "id": "537e4fbf0ef23a18",
+        "type": "ui_text",
+        "z": "c7d83dd76c9dcb21",
+        "group": "15713f4af7851114",
+        "order": 2,
+        "width": "6",
+        "height": "3",
+        "name": "",
+        "label": "MAC_Dispositivo :",
+        "format": "'{{ msg.payload.id }}'",
+        "layout": "col-center",
+        "className": "",
+        "x": 490,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "51b847d1ac39cadf",
+        "type": "function",
+        "z": "c7d83dd76c9dcb21",
+        "name": "Extraer Datos",
+        "func": "var id = msg.payload.id;\nvar temperatura = msg.payload.temperatura;\nvar pulso = msg.payload.pulso;\nmsg.params = [temperatura, pulso];\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c4445de3ba68ee4e",
+        "type": "postgresql",
+        "z": "c7d83dd76c9dcb21",
+        "name": "Railway",
+        "query": "SELECT * FROM sisvir_dev.dispositivos",
+        "postgreSQLConfig": "1046833424e00bcc",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 400,
+        "y": 1200,
+        "wires": [
+            [
+                "b0f776e8b49dfe0e"
+            ]
+        ]
+    },
+    {
+        "id": "b0f776e8b49dfe0e",
+        "type": "debug",
+        "z": "c7d83dd76c9dcb21",
+        "name": "debug 2",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 520,
+        "y": 1280,
+        "wires": []
+    },
+    {
+        "id": "f809febfd35e4d46",
         "type": "inject",
-        "z": "96bccfd90d6c251c",
+        "z": "c7d83dd76c9dcb21",
         "name": "",
         "props": [
             {
@@ -38,10 +501,107 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 260,
-        "y": 180,
+        "x": 220,
+        "y": 1340,
         "wires": [
             []
         ]
+    },
+    {
+        "id": "a41cb59e3fa3e679",
+        "type": "inject",
+        "z": "c7d83dd76c9dcb21",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 240,
+        "y": 1240,
+        "wires": [
+            [
+                "c4445de3ba68ee4e"
+            ]
+        ]
+    },
+    {
+        "id": "bc09de75de2f092d",
+        "type": "postgresql",
+        "z": "c7d83dd76c9dcb21",
+        "name": "SISVIR_ID:5",
+        "query": "DO $$\nBEGIN\n    IF EXISTS (SELECT mac FROM sisvir_dev.dispositivos WHERE mac = '{{ msg.payload.id }}') then\n        IF EXISTS (select paciente_id from sisvir_dev.dispositivos d where d.mac = '{{ msg.payload.id }}') then\n            IF EXISTS (SELECT * FROM sisvir_dev.signos_vitales WHERE paciente_id = (SELECT paciente_id FROM sisvir_dev.dispositivos WHERE mac = '{{ msg.payload.id }}')) then\n                UPDATE sisvir_dev.signos_vitales SET created_date = now() - INTERVAL '5 hours', pulso_cardiaco = {{ msg.payload.pulso }}, \n                temperatura = {{ msg.payload.temperatura }}\n                WHERE paciente_id = (SELECT paciente_id FROM sisvir_dev.dispositivos WHERE mac = '{{ msg.payload.id }}');\n            ELSE\n                INSERT INTO sisvir_dev.signos_vitales (created_date, pulso_cardiaco, temperatura, paciente_id) \n                VALUES (now() - INTERVAL '5 hours', {{ msg.payload.pulso }}, {{ msg.payload.temperatura }}, (SELECT paciente_id FROM sisvir_dev.dispositivos WHERE mac = '{{ msg.payload.id }}'));\n            END IF;\n        END IF;\n    END IF;\nEND $$;\n",
+        "postgreSQLConfig": "1046833424e00bcc",
+        "split": true,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 430,
+        "y": 240,
+        "wires": [
+            [
+                "8d081bc4a7500d57"
+            ]
+        ]
+    },
+    {
+        "id": "8d081bc4a7500d57",
+        "type": "debug",
+        "z": "c7d83dd76c9dcb21",
+        "name": "debug 4",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 660,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "fde0270ca9586c55",
+        "type": "postgresql",
+        "z": "c7d83dd76c9dcb21",
+        "name": "SISVIR_ID:6",
+        "query": "DO $$\nBEGIN\n    IF EXISTS (SELECT mac FROM sisvir_dev.dispositivos WHERE mac = 'BC:FF:4D:40:BC:B5') THEN\n        IF EXISTS (SELECT paciente_id FROM sisvir_dev.dispositivos WHERE mac = 'BC:FF:4D:40:BC:B5') THEN\n            IF EXISTS (SELECT * FROM sisvir_dev.signos_vitales WHERE paciente_id = (SELECT paciente_id FROM sisvir_dev.dispositivos WHERE mac = 'BC:FF:4D:40:BC:B5')) THEN\n                UPDATE sisvir_dev.signos_vitales SET created_date = now() - INTERVAL '5 hours', pulso_cardiaco = {{ msg.payload.pulso }}, \n                temperatura = {{ msg.payload.temperatura }}\n                WHERE paciente_id = (SELECT paciente_id FROM sisvir_dev.dispositivos WHERE mac = 'BC:FF:4D:40:BC:B5');\n            ELSE\n                INSERT INTO sisvir_dev.signos_vitales (created_date, pulso_cardiaco, temperatura, paciente_id) \n                VALUES (now() - INTERVAL '5 hours', {{ msg.payload.pulso }}, {{ msg.payload.temperatura }}, (SELECT paciente_id FROM sisvir_dev.dispositivos WHERE mac = 'BC:FF:4D:40:BC:B5'));\n            END IF;\n        END IF;\n    END IF;\nEND $$;\n",
+        "postgreSQLConfig": "1046833424e00bcc",
+        "split": true,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 390,
+        "y": 100,
+        "wires": [
+            [
+                "01fd5ce002207238"
+            ]
+        ]
+    },
+    {
+        "id": "01fd5ce002207238",
+        "type": "debug",
+        "z": "c7d83dd76c9dcb21",
+        "name": "debug 5",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 640,
+        "y": 60,
+        "wires": []
     }
 ]
