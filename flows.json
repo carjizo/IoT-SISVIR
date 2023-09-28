@@ -41,26 +41,7 @@
         "x": 260,
         "y": 180,
         "wires": [
-            [
-                "b47c672a15883fe5"
-            ]
+            []
         ]
-    },
-    {
-        "id": "b47c672a15883fe5",
-        "type": "ui_text",
-        "z": "96bccfd90d6c251c",
-        "group": "de145662e3b2c5ca",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "text",
-        "format": "{{msg.payload}}",
-        "layout": "row-spread",
-        "className": "",
-        "x": 590,
-        "y": 160,
-        "wires": []
     }
 ]
