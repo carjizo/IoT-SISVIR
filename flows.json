@@ -8,6 +8,14 @@
         "env": []
     },
     {
+        "id": "a7e5e8f776336556",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "de145662e3b2c5ca",
         "type": "ui_group",
         "name": "Texto",
@@ -603,5 +611,179 @@
         "x": 640,
         "y": 60,
         "wires": []
+    },
+    {
+        "id": "d660c714045f9255",
+        "type": "http request",
+        "z": "a7e5e8f776336556",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://msvc-devices-production.up.railway.app/devices/getAll",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 430,
+        "y": 240,
+        "wires": [
+            [
+                "58898dc69254d4dc"
+            ]
+        ]
+    },
+    {
+        "id": "58898dc69254d4dc",
+        "type": "debug",
+        "z": "a7e5e8f776336556",
+        "name": "debug 6",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "jsonata",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 700,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "b3697f014f086e24",
+        "type": "inject",
+        "z": "a7e5e8f776336556",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 220,
+        "y": 260,
+        "wires": [
+            [
+                "d660c714045f9255"
+            ]
+        ]
+    },
+    {
+        "id": "eadfc5ddd678f14a",
+        "type": "http request",
+        "z": "a7e5e8f776336556",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://msvc-devices-production.up.railway.app/devices/create",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [
+            {
+                "keyType": "other",
+                "keyValue": "",
+                "valueType": "other",
+                "valueValue": ""
+            }
+        ],
+        "x": 630,
+        "y": 420,
+        "wires": [
+            [
+                "db90d0fe8c4997cd"
+            ]
+        ]
+    },
+    {
+        "id": "db90d0fe8c4997cd",
+        "type": "debug",
+        "z": "a7e5e8f776336556",
+        "name": "debug 7",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "jsonata",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 840,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "4b21942e446289cc",
+        "type": "inject",
+        "z": "a7e5e8f776336556",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 200,
+        "y": 420,
+        "wires": [
+            [
+                "abe29b678ef1b17c"
+            ]
+        ]
+    },
+    {
+        "id": "abe29b678ef1b17c",
+        "type": "change",
+        "z": "a7e5e8f776336556",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"mac\":\"88:2A:2B:3C:4D:5E\",\"code\":\"CDC234\"}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 420,
+        "y": 360,
+        "wires": [
+            [
+                "eadfc5ddd678f14a"
+            ]
+        ]
     }
 ]
